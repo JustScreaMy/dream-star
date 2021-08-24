@@ -10,10 +10,8 @@ export default function App() {
     return (
         <Router>
             <nav>
+                <Link className='dreamstar-name' to="/">★ DreamStar ★</Link>
                 <ul>
-                    <li>
-                        <Link to="/">Dreamstar</Link>
-                    </li>
                     <li>
                         <Link to="/contacts">Kontakty</Link>
                     </li>
@@ -45,5 +43,5 @@ export default function App() {
                 </Switch>
             </div>
         </Router>
-        )
+    )
 }

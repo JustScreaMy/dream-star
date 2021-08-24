@@ -1,17 +1,45 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+	list-style: none;
 	margin: 0;
+	text-decoration: none;
+	font-family: 'Inter', sans-serif;
 }
-
+body {
+	overflow-x: hidden;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("./img/background_header.png");
+}
 nav {
-	margin-top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 2rem;
+	background-color: #111;
 	ul {
+		width: 60%;
 		display: flex;
-		flex-direction: row;
 		justify-content: space-evenly;
-		list-style: none;
+		align-items: center;
+	}
+	a{
+		padding: .6rem 2rem;
+		transition: background .5s;
+		text-align: center;
+		font-size: 1.5rem;
+		color: rgb(255, 255, 255);
+		&:hover {
+			background-color: rgb(33, 42, 61);
+		}
+	}
+	.dreamstar-name{
+		&:hover{
+			background-color: #111;
+		}
 	}
 }
-
 .content {
 	width: 100%;
 	margin: 2rem;
