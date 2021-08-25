@@ -23,7 +23,7 @@ export default function App() {
                     </li>
                 </ul>
             </nav>
-            <div className="content">
+            <main className="content">
                 <Switch>
                     <Route exact path="/">
                         <Home />
@@ -41,7 +41,7 @@ export default function App() {
                         <NotFound />
                     </Route>
                 </Switch>
-            </div>
+            </main>
         </Router>
     )
 }

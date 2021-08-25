@@ -16,20 +16,43 @@ export default function Home() {
             "title":"test3",
             "text":"brrrrr3",
         },
+        {
+            "id": 3,
+            "title":"test3",
+            "text":"brrrrr3",
+        },
+        {
+            "id": 4,
+            "title":"test3",
+            "text":"brrrrr3",
+        },
+        {
+            "id": 5,
+            "title":"test3",
+            "text":"brrrrr3",
+        },
+        // {
+        //     "id": 6,
+        //     "title":"test3",
+        //     "text":"brrrrr3",
+        // },
     ]
     return (
-        <div>
-            <img className='elita-logo' src={elita} alt="majitelka serveru" title="Profilovka majitelky server" />
-            <div>
-                <h1>DreamStar</h1>
-                <ul>
-                    {novinky.map(novinka => (
-                        <li key={novinka.id}>
-                            <h3>{novinka.title}</h3>
-                            <p>{novinka.text}</p>
-                        </li>
-                    ))}
-                </ul>
+        <div className='container-home'>
+            <img className='elita-logo shadow-bg' src={elita} alt="majitelka serveru" title="Profilovka majitelky server" />
+            <div className='container-child'>
+                <h1 className='shadow-bg'>DreamStar</h1>
+                <div className='news shadow-bg'>
+                    <h2>Novinky</h2>
+                    <ul>
+                        {novinky.map(novinka => (
+                            <li key={novinka.id}>
+                                <h3>{novinka.title}</h3>
+                                <p>{novinka.text}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
         </div>
     )
