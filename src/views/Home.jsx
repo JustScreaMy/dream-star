@@ -38,12 +38,14 @@ export default function Home() {
         // },
     ]
     return (
+        <div className='container-home-con'>
+
         <div className='container-home'>
             <img className='elita-logo shadow-bg' src={elita} alt="majitelka serveru" title="Profilovka majitelky server" />
             <div className='container-child'>
-                <h1 className='shadow-bg'>DreamStar</h1>
+                    <h1 className='shadow-bg'>DreamStar</h1>
                 <div className='news shadow-bg'>
-                    <h2>Novinky</h2>
+                        <h2>Novinky</h2>
                     <ul>
                         {novinky.map(novinka => (
                             <li key={novinka.id}>
@@ -52,6 +54,7 @@ export default function Home() {
                             </li>
                         ))}
                     </ul>
+                    </div>
                 </div>
             </div>
         </div>
