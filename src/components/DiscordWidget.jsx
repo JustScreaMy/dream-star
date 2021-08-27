@@ -22,7 +22,8 @@ export default function DiscordWidget(props) {
             <a href={data.instant_invite}><button>Join Now!</button></a>
             <ul className='discord-nember-container'>
             {data.members.map(mbr => {
-                    return (<li key={mbr.id} className="discord-member">
+                    return (
+                    <li key={mbr.id} className="discord-member">
                         <DiscordMember
                             username={mbr.username}
                             status={mbr.status}

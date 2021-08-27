@@ -117,10 +117,6 @@ header {
 			}
 		}
 	}
-	.shadow-bg {
-		backdrop-filter: blur(5px);
-		background-color: rgba(17, 17, 17, 0.294);
-	}
 	.elita-logo {
 		height: 32vw;
 		width: 32vw;
@@ -128,29 +124,76 @@ header {
 		min-height: 12rem;
 	}
 }
+.shadow-bg {
+	backdrop-filter: blur(5px);
+	background-color: rgba(17, 17, 17, 0.3);
+}
 .discord-nember-container {
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	border-radius: 10px;
+	background-color: #23272A;
+	flex-direction: column;
+	height: 50vh;
+	width: 30rem;
+	padding-left: 10px;
+	min-height: 30rem;
+	overflow-y: scroll;
+	margin: 1rem;
+	&::-webkit-scrollbar {
+		width: 15px;
+	}
+	&::-webkit-scrollbar-track {
+		border-radius: 20px;
+		margin-right: 10px;
+		margin-block: 2px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: rgb(184, 184, 184);
+		border-radius: 20px;
+	}
 	
 	.discord-member {
 		margin: 10px;
-		width: 200px;
 		height: auto;
-		img {
-			border-radius: 50%;
-			width: 100px;
-			height: auto;
+		display: flex;
+		.title{
+			display: flex;
+			justify-content: space-between;
+			width: 90%;
+			display: flex;
+			p, h2{
+				color: rgb(184, 184, 184);
+				font-size: 1rem;
+			}
+			p{
+				text-overflow: ellipsis;
+				overflow-x: hidden;
+				width: auto;
+				padding-left: 1rem;
+			}
+			h2{
+				width: auto;
+			}
+	
 		}
 		.discord-avatar {
-			span {
-				&::after {
-					content: "";
-					position: absolute;
-					width: 15px;
-					height: 15px;
-					border-radius: 50%;
-				}
+			margin-right: 10px;
+			width: 35px;
+			height: 35px;
+			&::after {
+				content: "";
+				position: relative;
+				display: block;
+				left: 20px;
+				top: -14px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+			}
+			img {
+				border-radius: 50%;
+				width: 30px;
+				height: auto;
 			}
 		}
 		.online {
