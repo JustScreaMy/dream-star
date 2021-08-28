@@ -18,21 +18,25 @@ export default function DiscordWidget(props) {
             .catch(err => console.error(err))       
     }, [])
     return (
-        <>
-            <a href={data.instant_invite}><button>Join Now!</button></a>
-            <ul className='discord-nember-container'>
-            {data.members.map(mbr => {
-                    return (<li key={mbr.id} className="discord-member">
-                        <DiscordMember
-                            username={mbr.username}
-                            status={mbr.status}
-                            game={mbr.game}
-                            avatar_url={mbr.avatar_url}
-                        />
-                    </li>)
-                })}
-            </ul>
-        </>
+        <div className='container-discord'>  
+            <a className='discord-invite' href={data.instant_invite}><span>Join Now!</span></a>
+            <div className='container-online-players'>
+                <h1>Online players</h1>
+                <ul className='discord-nember-container'>
+                {data.members.map(mbr => {
+                    return (
+                        <li key={mbr.id} className="discord-member">
+                            <DiscordMember
+                                username={mbr.username}
+                                status={mbr.status}
+                                game={mbr.game}
+                                avatar_url={mbr.avatar_url}
+                                />
+                        </li>)
+                    })}
+                </ul>
+            </div>
+        </div>
     )
 }
 

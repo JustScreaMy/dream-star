@@ -11,13 +11,14 @@ export default function DiscordMember(props) {
 
     return (
         <>
-            <div className="discord-avatar">
-                <img src={avatar_url} alt={username+" avatar"} />
-                <span className={status} />
+            <div className={status + " discord-avatar"}>
+                <img src={avatar_url} alt={username + " avatar"} />
+            </div >
+            <div className='title'>
+                <h2>{username}</h2>
+                {game &&
+                <p>{game.name}</p>}
             </div>
-            <p>{username}</p>
-            {game &&
-            <p>{game.name}</p>}
         </>
     )
 }
