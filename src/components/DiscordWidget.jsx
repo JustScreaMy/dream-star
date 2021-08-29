@@ -16,8 +16,7 @@ export default function DiscordWidget(props) {
                 setData(dat)
             })
             .catch(err => console.error(err))       
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    }, [url])
     return (
         <div className='container-discord'>  
             <a className='discord-invite' href={data.instant_invite}><span>Join Now!</span></a>
