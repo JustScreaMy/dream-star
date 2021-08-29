@@ -46,7 +46,6 @@ header {
 			color: rgb(255, 255, 255);
 			transition: color 0.5s;
 			&:hover {
-
 				color: #23272a;
 			}
 		}
@@ -88,39 +87,6 @@ header {
 			.news {
 				width: 40vw;
 				margin-top: 2rem;
-				h2 {
-					text-align: center;
-					font-size: 2rem;
-					text-decoration: underline;
-					margin-bottom: 1.5rem;
-					top: 10px;
-					position: relative;
-				}
-				ul {
-					padding: 10px;
-					&::-webkit-scrollbar {
-						width: 15px;
-					}
-					&::-webkit-scrollbar-track {
-						border: 2px rgb(255, 255, 255) solid;
-						border-radius: 20px;
-					}
-					&::-webkit-scrollbar-thumb {
-						background-color: rgb(255, 255, 255);
-						border-radius: 20px;
-					}
-					overflow-y: scroll;
-					height: 15vw;
-					li {
-						border-radius: 5px;
-						border: rgb(255, 255, 255) solid 1px;
-						margin: 15px;
-						h3,
-						p {
-							padding: 0.5rem;
-						}
-					}
-				}
 			}
 		}
 	}
@@ -138,7 +104,7 @@ header {
 .discord-nember-container {
 	display: flex;
 	border-radius: 10px;
-	background-color: #23272A;
+	background-color: #23272a;
 	flex-direction: column;
 	height: 50vh;
 	width: 30vw;
@@ -158,30 +124,30 @@ header {
 		background-color: rgb(184, 184, 184);
 		border-radius: 20px;
 	}
-	
+
 	.discord-member {
 		margin: 10px;
 		height: auto;
 		display: flex;
-		.title{
+		.title {
 			display: flex;
 			justify-content: space-between;
 			width: 90%;
 			display: flex;
-			p, h2{
+			p,
+			h2 {
 				color: rgb(184, 184, 184);
 				font-size: 1rem;
 			}
-			p{
+			p {
 				text-overflow: ellipsis;
 				overflow-x: hidden;
 				width: auto;
 				padding-left: 1rem;
 			}
-			h2{
+			h2 {
 				width: auto;
 			}
-	
 		}
 		.discord-avatar {
 			margin-right: 10px;
@@ -220,42 +186,41 @@ header {
 		}
 	}
 }
-.container-discord{
+.container-discord {
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
 	flex-wrap: wrap;
 	align-items: center;
 	margin-top: 3rem;
-	h1{
+	h1 {
 		color: #fff;
 		background-color: #23272a;
 		font-size: 4vw;
 		width: 100%;
 		border-radius: 10px;
 		padding: 1.5rem;
-		box-shadow: 0px -10px  #ffffff inset;
-
+		box-shadow: 0px -10px #ffffff inset;
 	}
-	.container-online-players{
+	.container-online-players {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 	}
-	.discord-invite{
+	.discord-invite {
 		background-color: #23272a;
 		font-size: 5vw;
 		margin-block: 2rem;
-		transition: box-shadow .5s;
+		transition: box-shadow 0.5s;
 		color: #fff;
 		padding: 4rem;
 		box-shadow: 0px 0px inset;
 		border-radius: 10px;
-		&:hover{
-			box-shadow: 0px -15rem  #ffffff2d inset;
+		&:hover {
+			box-shadow: 0px -15rem #ffffff2d inset;
 		}
-		span{
-			color: #fff;	
+		span {
+			color: #fff;
 		}
 	}
 }
@@ -268,12 +233,11 @@ header {
 	}
 }
 @media screen and (max-width: 1200px) and (min-width: 0) {
-	.discord-nember-container{
+	.discord-nember-container {
 		width: 90vw;
-		
 	}
-	.container-online-players{
-		h1{
+	.container-online-players {
+		h1 {
 			width: 70%;
 		}
 	}

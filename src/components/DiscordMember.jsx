@@ -7,7 +7,7 @@ export default function DiscordMember(props) {
         status,
         game,
         avatar_url
-    } = props;
+    } = props
 
     return (
         <>
