@@ -1,6 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
 import ContactCard from '../components/ContactCard.jsx'
 
+const Ul = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 3rem;
+`
+const H1 = styled.h1`
+    color: #fff;
+    font-size: 4vw;
+    margin-top: 2rem;
+    text-align: center;
+`
 export default function Contacts() {
     const kontakty = [
         {
@@ -29,16 +42,19 @@ export default function Contacts() {
     ]
     return (
         <div>
-            <h1>Kontakty</h1>
-            {kontakty.map((kontakt, idx) => {
-                return <ContactCard
+            <H1>Kontakty</H1>
+            <Ul className='contacts-list'>
+                {kontakty.map((kontakt, idx) => {
+                    return <ContactCard
                     key={idx}
                     username={kontakt.nickname}
                     role={kontakt.role}
                     discord={kontakt.discord}
                     imageUrl={kontakt.imageUrl}
-                />
-            })}
+                    />
+                })}
+            </Ul>
         </div>
     )
 }
+
