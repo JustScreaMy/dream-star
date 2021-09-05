@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom"
 
+
 import Home from "./views/Home"
 import Server from "./views/Server"
 import Discord from "./views/Discord"
