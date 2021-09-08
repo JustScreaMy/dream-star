@@ -48,7 +48,7 @@ export default function Server() {
                         <Paragraph>Verze: 1.17.1.</Paragraph>
                     </Child>
                     <Child direction='column' margin={true}>
-                        <H1>Socialní síťe</H1>
+                        <H1>Sociální síťe</H1>
                         <Paragraph>Discord: Elita`s Twitch</Paragraph>
                         <Paragraph>Twitter: @DreamStarReal</Paragraph>
                     </Child>
