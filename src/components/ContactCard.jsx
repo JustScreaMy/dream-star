@@ -1,10 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from 'styled-components'
+import styled from "styled-components"
 const Li = styled.li`
 	color: #fff;
 	margin: 1.5rem;
-	width: 35rem;
+	width: 40rem;
+	overflow: hidden;
 	display: flex;
 	@media screen and (max-width: 300px) and (min-width: 0) {
 		display: block;
@@ -14,15 +15,14 @@ const Li = styled.li`
 	box-shadow: 2px 2px 20px 5px #2929292b;
 `
 const H2 = styled.h2`
-	font-size: 3vw;
-	margin-bottom: .8rem;
+	font-size: clamp(2rem, 3vw, 5rem);
+	margin-bottom: 0.8rem;
 	width: 100%;
-	
 `
 const Img = styled.img`
-	width: 10rem;
-	height: auto;
-	@media screen and (max-width: 300px) and (min-width: 0) {
+	width: 15rem;
+	height: 15rem;
+	@media screen and (max-width: 600px) and (min-width: 0) {
 		display: none;
 	}
 `
@@ -32,7 +32,7 @@ const Div = styled.div`
 	flex-direction: column;
 `
 const P = styled.p`
-	font-size: 2vw;
+	font-size: clamp(1rem, 2vw, 5rem);
 `
 export default function ContactCard({ role, username, imageUrl, discord }) {
 	return (
@@ -52,4 +52,3 @@ ContactCard.propTypes = {
 	imageUrl: PropTypes.string.isRequired,
 	discord: PropTypes.string,
 }
-

@@ -1,12 +1,9 @@
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom"
 
-
 import Home from "./views/Home"
 import Server from "./views/Server"
 import Discord from "./views/Discord"
 import Contacts from "./views/Contacts"
-import NotFound from "./views/NotFound"
-
 
 export default function App() {
 	return (
@@ -31,9 +28,6 @@ export default function App() {
 			</header>
 			<main className="content">
 				<Switch>
-					<Route exact path="/">
-						<Home />
-					</Route>
 					<Route path="/contacts">
 						<Contacts />
 					</Route>
@@ -44,7 +38,7 @@ export default function App() {
 						<Discord />
 					</Route>
 					<Route path="*">
-						<NotFound />
+						<Home />
 					</Route>
 				</Switch>
 			</main>

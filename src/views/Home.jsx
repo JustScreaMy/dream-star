@@ -2,41 +2,6 @@ import React from "react"
 import elita from "../img/elita.jpg"
 import { Timeline } from "react-twitter-widgets"
 export default function Home() {
-	//const novinky = [
-	//    {
-	//        "id": 0,
-	//        "title":"haha",
-	//        "text":"brrrrr",
-	//    },{
-	//        "id": 1,
-	//        "title":"test2",
-	//        "text":"brrrrr2",
-	//    },{
-	//        "id": 2,
-	//        "title":"test3",
-	//        "text":"brrrrr3",
-	//    },
-	//    {
-	//        "id": 3,
-	//        "title":"test3",
-	//        "text":"brrrrr3",
-	//    },
-	//    {
-	//        "id": 4,
-	//        "title":"test3",
-	//        "text":"brrrrr3",
-	//    },
-	//    {
-	//        "id": 5,
-	//        "title":"test3",
-	//        "text":"brrrrr3",
-	//    },
-	// {
-	//     "id": 6,
-	//     "title":"test3",
-	//     "text":"brrrrr3",
-	// },
-	//]
 	return (
 		<div className="container-home-con">
 			<div className="container-home">
@@ -52,7 +17,7 @@ export default function Home() {
 						<Timeline
 							dataSource={{
 								sourceType: "profile",
-								screenName: "TwitterDev",
+								screenName: "DreamStarReal",
 							}}
 							options={{
 								height: "325",
