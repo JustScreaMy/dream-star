@@ -18,6 +18,9 @@ body {
 header {
 	background-color: #23272a;
 	padding-inline: 2rem 0rem;
+	position: sticky;
+	z-index: 9999;
+	top: 0;
 	nav {
 		width: 100%;
 		display: flex;
@@ -103,6 +106,7 @@ header {
 	min-height: 12rem;
 }
 .shadow-bg {
+	border-radius: 10px;
 	backdrop-filter: blur(5px);
 	background-color: rgba(17, 17, 17, 0.3);
 }
@@ -205,7 +209,6 @@ header {
 		width: 100%;
 		border-radius: 10px;
 		padding: 1.5rem;
-		box-shadow: 0px -10px #ffffff inset;
 	}
 	.container-online-players {
 		display: flex;
@@ -218,11 +221,12 @@ header {
 		margin-block: 2rem;
 		transition: box-shadow 0.9s;
 		color: #fff;
-		padding: 4rem;
+		padding: 2rem;
 		box-shadow: 0px 0px inset, 0px 0px inset, 0px 0px inset;
 		border-radius: 10px;
 		&:hover {
-			box-shadow: 0px -40rem #ffffff2d inset,  0px -10rem #23272a inset, 0px -20rem #23272a inset;
+			box-shadow: 0px -40rem #ffffff2d inset, 0px -10rem #23272a inset,
+				0px -20rem #23272a inset;
 		}
 		span {
 			color: #fff;
@@ -236,7 +240,7 @@ header {
 			height: 15rem !important;
 		}
 	}
-	header{
+	header {
 		padding-inline: 2rem 1rem;
 	}
 }
